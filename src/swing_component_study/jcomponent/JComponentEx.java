@@ -22,7 +22,7 @@ public class JComponentEx extends JFrame implements ActionListener {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -33,7 +33,7 @@ public class JComponentEx extends JFrame implements ActionListener {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
@@ -42,7 +42,7 @@ public class JComponentEx extends JFrame implements ActionListener {
 		initComponents();
 	}
 	private void initComponents() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		//크기(100 x, 100 y <- 모니터 상에서의 100px) 450 폭 , 300너비
 		setBounds(100, 100, 260, 200);
 		contentPane = new JPanel();

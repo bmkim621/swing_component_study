@@ -36,7 +36,7 @@ public class RadioBtnEventEx extends JFrame implements ItemListener {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -47,7 +47,7 @@ public class RadioBtnEventEx extends JFrame implements ItemListener {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
@@ -57,7 +57,7 @@ public class RadioBtnEventEx extends JFrame implements ItemListener {
 	}
 	private void initComponents() {
 		setTitle("라디오버튼 Item Event 예제");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 250, 200);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
