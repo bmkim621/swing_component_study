@@ -23,6 +23,7 @@ public class JComponentMain extends JFrame implements ActionListener {
 	private JButton btn5;
 	private JButton btn6;
 	private JButton btn7;
+	private JButton btn8;
 
 	/**
 	 * Launch the application.
@@ -82,9 +83,16 @@ public class JComponentMain extends JFrame implements ActionListener {
 		btn7 = new JButton("RadioBtnEventEx");
 		btn7.addActionListener(this);
 		contentPane.add(btn7);
+		
+		btn8 = new JButton("JSliderChangeEventEx");
+		btn8.addActionListener(this);
+		contentPane.add(btn8);
 	}
 
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btn8) {
+			showframe(new JSliderChangeEventEx());
+		}
 		if (e.getSource() == btn7) {
 			showframe(new RadioBtnEventEx());
 		}
@@ -120,5 +128,4 @@ public class JComponentMain extends JFrame implements ActionListener {
 	//버튼6 JTextFieldOtherEx
 	protected void do_btn6_actionPerformed(ActionEvent e) throws ParseException {
 	}
-
 }
